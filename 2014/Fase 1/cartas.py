@@ -1,14 +1,12 @@
-lista_cartas = []
 ordem = ''
 
-for i in range(5):
-    num_cartas = int(input(""))
-    lista_cartas.append(num_cartas) 
+num_cartas = input("")
+num_cartas = num_cartas.split()  
 
-for i in range(len(lista_cartas) - 1):
-    if lista_cartas[i] < lista_cartas[i + 1]:
+for i in range(len(num_cartas) - 1):
+    if num_cartas[i] < num_cartas[i + 1]:
         ordem = 'C'
-    elif lista_cartas[i] > lista_cartas[i - 1]:
+    elif num_cartas[i] > num_cartas[i - 1]:
         ordem = 'D'
     else:
         ordem = 'N'
