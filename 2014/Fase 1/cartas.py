@@ -1,3 +1,4 @@
+# Questão da OBI 2024 nível sênior: https://olimpiada.ic.unicamp.br/pratique/ps/2014/f1/cartas/
 def inteiro(cartas):
     index = 0
     for cartinhas in cartas:
