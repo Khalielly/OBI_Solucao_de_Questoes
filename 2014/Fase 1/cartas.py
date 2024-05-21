@@ -1,20 +1,20 @@
-ordem = ''
+def inteiro(cartas):
+    index = 0
+    for cartinhas in cartas:
+        cartas[index] = int(cartas[index])
+        index += 1
 
-num_cartas = input("")
-num_cartas = num_cartas.split()  
+ordem = ""
+num_cartas = input()
+num_cartas = num_cartas.split()
 
-for i in range(len(num_cartas) - 1):
-    if num_cartas[i] < num_cartas[i + 1]:
-        ordem = 'C'
-    elif num_cartas[i] < num_cartas[i - 1]:
-        ordem = 'D'
-    else:
-        ordem = 'N'
-        break
+inteiro(num_cartas)
 
-if ordem == 'C':
-    print(f'{ordem}\n')
-elif ordem == 'D':
-    print(f'{ordem}\n')
+if num_cartas == sorted(num_cartas):
+    ordem = "C"
+elif num_cartas == sorted(num_cartas, reverse= True):
+    ordem = "D"
 else:
-    print(f'{ordem}\n')
+    ordem = "N"
+
+print(ordem)
