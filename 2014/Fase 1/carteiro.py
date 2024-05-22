@@ -1,3 +1,5 @@
+# OBI 2024 - Nível Sênior - Fase 1: https://olimpiada.ic.unicamp.br/pratique/ps/2014/f1/carteiro/
+
 N, M = [int(d) for d in input().split()]
 casas = [int(c) for c in input().split()]
 encomendas = [int(e) for e in input().split()]
