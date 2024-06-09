@@ -16,4 +16,3 @@ for conta in contas:
         contasPg+=1
 
 print(contasPg)
-
